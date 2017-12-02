@@ -1,0 +1,15 @@
+{
+  "name": "freehand",
+  "version": "1.0.0",
+  "description": "UX Designer",
+  "main": "app/core/index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Pradhaban",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13"
+  },
+  "dependencies": {}
+}
