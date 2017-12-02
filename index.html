@@ -2,7 +2,7 @@
 <!--
 Main HTML file for app
 -->
-<html>
+<html ng-app="freehand">
     <head>
         <title>Free Hand - APP</title>
         <meta charset="UTF-8">
@@ -14,17 +14,30 @@ Main HTML file for app
     <body>
         <div class="container-fluid">
             <div class="row fh-divider-horizontal fh-menu">
-                <div class="col-md-12 fh-actionbar">
+                <div class="col-md-5 fh-actionbar">
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-plus"></button>
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-folder-open"></button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 fh-divider-vertical">
-                    
+                <div class="col-md-2 fh-divider-vertical fh-sidebar" ng-controller="sidebarCtrl as sc">
+                    <div class="list-group">
+                        <button ng-repeat="item in sc.sidebarValues" type="button" class="list-group-item">{{item.value}}</button>
+                    </div>
                 </div>
-                <div class="col-md-10">Lorem Ipsum</div>
+                <div class="col-md-10">
+                    <div class="fh-drawArea">
+                        <div class="fh-outerbar">
+                            <div contenteditable="true" class="fh-canvas-title">Your App title</div>
+                        </div>
+                        <canvas class="fh-canvas"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="js/angular.min.js" type="text/javascript"></script>
+        <script src="app/core/app-core.js" type="text/javascript"></script>
+        <script src="app/data/app-values.js" type="text/javascript"></script>
+        <script src="app/sidebar/sidebar.js" type="text/javascript"></script>
     </body>
 </html>

@@ -3,9 +3,13 @@
     Author     : Pradhaban
 */
 
+body > *{
+    outline: none;
+}
+
 .fh-actionbar{
     padding: 5px 0px;
-    margin: 0px 15px;
+    margin-left: 15px;
 }
 
 .fh-btn{
@@ -27,5 +31,32 @@
 }
 
 .fh-sidebar{
-    height: 100%;
+    height: 90vh;
+}
+
+.fh-drawArea{
+     min-height: 83vh;
+    border: 1px solid #ccc;
+    margin: 0vh auto;
+    width: 150vh;
+}
+
+.fh-canvas{
+    width: 150vh;
+    height: 85vh;
+}
+
+.fh-outerbar {
+    min-height: 25px;
+    background: #ccc;
+}
+
+.fh-canvas-title{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+    font-family: verdana;
+    line-height: 26px;
 }

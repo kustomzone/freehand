@@ -1,3 +1,9 @@
+/*
+ * Electron Start Up File
+ * Contains Logic to start web to destop app
+ * 
+*/
+
 const electron = require('electron');
 const path=require('path');
 const url=require('url');
