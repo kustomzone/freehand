@@ -12,6 +12,10 @@
         
         vm.sidebarValues=sidebarValues;
         
+        vm.createEle= function(ele){
+            console.log(ele);
+        };
+        
     };
     
     angular.module('freehand').controller('sidebarCtrl',['sidebarValues',sidebarCtrl]);

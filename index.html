@@ -22,22 +22,39 @@ Main HTML file for app
             <div class="row">
                 <div class="col-md-2 fh-divider-vertical fh-sidebar" ng-controller="sidebarCtrl as sc">
                     <div class="list-group">
-                        <button ng-repeat="item in sc.sidebarValues" type="button" class="list-group-item">{{item.value}}</button>
+                        <button ng-repeat="item in sc.sidebarValues" ng-click="sc.createEle(item)" type="button" class="list-group-item">{{item.value}}</button>
                     </div>
                 </div>
                 <div class="col-md-10">
-                    <div class="fh-drawArea">
+                    <div class="fh-drawArea" ng-controller="drawCtrl as dc" ng-init="dc.drawArea()">
                         <div class="fh-outerbar">
-                            <div contenteditable="true" class="fh-canvas-title">Your App title</div>
+                            <div class="fh-canvas-title">
+                                Browser - <span contenteditable="true">Your App title</span>
+                            </div>
                         </div>
                         <canvas class="fh-canvas"></canvas>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!--        Libraries-->
+
         <script src="js/angular.min.js" type="text/javascript"></script>
+        <script src="js/fabric.min.js" type="text/javascript"></script>
+
+
+        <!--        App JS Files-->
+
         <script src="app/core/app-core.js" type="text/javascript"></script>
         <script src="app/data/app-values.js" type="text/javascript"></script>
-        <script src="app/sidebar/sidebar.js" type="text/javascript"></script>
+        <script src="app/sidebar/sidebarCtrl.js" type="text/javascript"></script>
+        <script src="app/drawArea/drawCtrl.js" type="text/javascript"></script>
+
+
+        <!--        Service Files-->
+        
+        <script src="app/common/fabricService.js" type="text/javascript"></script>
+
     </body>
 </html>
