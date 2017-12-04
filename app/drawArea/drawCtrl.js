@@ -7,11 +7,18 @@
     
     'use strict';
     
-    function drawArea(){
-        console.log("am i here");
+    function drawArea(fabricService){
+        
+        var vm=this;
+        
+        vm.intialize = function(){
+            console.log("drae init");
+            fabricService.intializeCanvas();
+        };
+        
     };
     
-    angular.module('freehand').controller('drawCtrl',[drawArea]);
+    angular.module('freehand').controller('drawCtrl',['fabricService',drawArea]);
     
 })();
 

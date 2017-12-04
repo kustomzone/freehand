@@ -26,13 +26,13 @@ Main HTML file for app
                     </div>
                 </div>
                 <div class="col-md-10">
-                    <div class="fh-drawArea" ng-controller="drawCtrl as dc" ng-init="dc.drawArea()">
+                    <div class="fh-drawArea" ng-controller="drawCtrl as dc" ng-init="dc.intialize()">
                         <div class="fh-outerbar">
                             <div class="fh-canvas-title">
                                 Browser - <span contenteditable="true">Your App title</span>
                             </div>
                         </div>
-                        <canvas class="fh-canvas"></canvas>
+                        <canvas class="fh-canvas" id="fhCanvas"></canvas>
                     </div>
                 </div>
             </div>
