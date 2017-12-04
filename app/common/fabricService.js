@@ -12,15 +12,11 @@
         
         var canvas=null;
         
-        function createCustomObject(json){
-            
-        };
-        
         function intializeCanvas() {
-            var width=document.getElementById("fhCanvas").clientWidth;
-            var height=document.getElementById("fhCanvas").clientHeight;
+            var width = document.getElementById("fhCanvas").clientWidth;
+            var height = document.getElementById("fhCanvas").clientHeight;
 
-            canvas = new fabric.Canvas('fhCanvas',{width:width,height:height});
+            canvas = new fabric.Canvas('fhCanvas', {width: width, height: height});
 
             //Test
 
@@ -31,16 +27,29 @@
                 width: 20,
                 height: 20
             });
-            
+
             canvas.add(rect);
-            console.log(getObject());
+            setCustomDecor();
         };
         
+        function setCustomDecor() {
+            var lastItemIndex = getObject().length - 1;
+            canvas.item(lastItemIndex).setControlVisible('mtr', false);
+            canvas.item(lastItemIndex).set({
+                borderColor: 'grey',
+                cornerColor: 'black',
+                cornerSize: 6,
+                transparentCorners: false
+            });
+        }
+        ;
+        
         function getObject(){
-          var objects={};
+          var items={};
           
-          objects=canvas.toObject();
-          return objects;
+          items=canvas.toObject().objects;
+          console.log(items.length);
+          return items;
         };
         
         return {
