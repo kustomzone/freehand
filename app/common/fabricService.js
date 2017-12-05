@@ -44,6 +44,28 @@
         }
         ;
         
+        function createBtn() {
+            var rect = new fabric.Rect({
+                left: 100,
+                top: 100,
+                fill: 'white',
+                width: 100,
+                height: 30
+            });
+
+            var text = new fabric.Text('Label', {left: 130, top: 108,fontSize:13});
+
+            var group = new fabric.Group([rect, text], {
+                left: 150,
+                top: 100,
+                stroke: 'black',
+                strokeWidth:1,
+            });
+
+            canvas.add(group);
+            setCustomDecor();
+        };
+        
         function getObject(){
           var items={};
           
@@ -56,7 +78,8 @@
             ccObj:function(json){
                 createCustomObject(json);
             },
-            intializeCanvas:intializeCanvas
+            intializeCanvas:intializeCanvas,
+            createBtn:createBtn
         };
         
     };

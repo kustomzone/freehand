@@ -7,7 +7,7 @@
     
     'use strict';
     
-    function sidebarCtrl(sidebarValues){
+    function sidebarCtrl(sidebarValues,fabricService){
         var vm=this;
         
         vm.sidebarValues=sidebarValues;
@@ -17,6 +17,7 @@
                 case 'winow':
                     break;
                 case 'button':
+                    fabricService.createBtn();
                     break;
                 case 'cntText':
                     break;
@@ -35,7 +36,7 @@
         
     };
     
-    angular.module('freehand').controller('sidebarCtrl',['sidebarValues',sidebarCtrl]);
+    angular.module('freehand').controller('sidebarCtrl',['sidebarValues','fabricService',sidebarCtrl]);
     
     
 })();

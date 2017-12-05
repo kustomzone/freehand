@@ -12,7 +12,7 @@
         var vm=this;
         
         vm.intialize = function(){
-            console.log("drae init");
+            console.log("Canvas Intialized");
             fabricService.intializeCanvas();
         };
         
