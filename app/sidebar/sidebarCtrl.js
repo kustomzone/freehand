@@ -14,7 +14,8 @@
         
         vm.createEle= function(json){
             switch(json.name){
-                case 'winow':
+                case 'popup':
+                     fabricService.createPopup();
                     break;
                 case 'button':
                     fabricService.createBtn();
