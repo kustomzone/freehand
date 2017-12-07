@@ -21,6 +21,7 @@
                     fabricService.createBtn();
                     break;
                 case 'cntText':
+                    fabricService.createContentTxt();
                     break;
                 case 'dummyTxt':
                     break;
@@ -29,6 +30,7 @@
                 case 'progressbar':
                     break;
                 case 'imgplaceholder':
+                    fabricService.createIMH();
                     break;
                 default:
                         
