@@ -64,3 +64,7 @@ body > *{
 .fh-listBtn{
     outline: none;
 }
+
+.fh-toolbar{
+    float: right;
+}

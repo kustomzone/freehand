@@ -24,6 +24,7 @@
                     fabricService.createContentTxt();
                     break;
                 case 'dummyTxt':
+                    fabricService.createDummyTxt();
                     break;
                 case 'spinner':
                     break;

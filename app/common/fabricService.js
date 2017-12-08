@@ -21,11 +21,9 @@
                 canvas.on("object:selected", function (options) {
                     options.target.bringToFront();
                 });
-                
-                
-                
             }, 1000);
         } ;
+        
         
         function setCustomDecor() {
             var lastItemIndex = getObject().length - 1;
@@ -97,6 +95,13 @@
             objLen.btn++;
         };
         
+        function createDummyTxt(){
+            var txtString='Lorem ipsum dolor sit amet, consectetur adipiscing elit';
+            var text = new fabric.Text(txtString, {left: 130, top: 108,fontSize:13});
+            canvas.add(text);
+            setCustomDecor();
+        };
+        
         /* Utility Functions */
         
         function createRect(json){
@@ -118,7 +123,8 @@
             createBtn:createBtn,
             createPopup:createPopup,
             createIMH:createIMH,
-            createContentTxt:createContentTxt
+            createDummyTxt:createDummyTxt,
+            createContentTxt:createContentTxt,
         };
         
     };
