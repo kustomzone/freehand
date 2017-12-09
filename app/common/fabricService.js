@@ -95,11 +95,16 @@
             objLen.btn++;
         };
         
+        
         function createDummyTxt(){
             var txtString='Lorem ipsum dolor sit amet, consectetur adipiscing elit';
             var text = new fabric.Text(txtString, {left: 130, top: 108,fontSize:13});
             canvas.add(text);
             setCustomDecor();
+        };
+        
+        function deleteObj(){
+          canvas.remove(canvas.getActiveObject());
         };
         
         /* Utility Functions */
@@ -125,6 +130,7 @@
             createIMH:createIMH,
             createDummyTxt:createDummyTxt,
             createContentTxt:createContentTxt,
+            deleteObj:deleteObj
         };
         
     };

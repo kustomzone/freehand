@@ -23,7 +23,7 @@ Main HTML file for app
                 <div class="col-md-2 col-md-offset-4 fh-toolbar" ng-controller="toolbarCtrl as tc">
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-copy" title="Copy Active DOM"></button>
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-paste" title="Paste Active DOM"></button>
-                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-trash" title="Delete Active DOM"></button>
+                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-trash" ng-click="tc.deleteObj()" title="Delete Active DOM"></button>
                 </div>
             </div>
             <div class="row">
