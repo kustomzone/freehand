@@ -7,10 +7,11 @@
     
     'use strict';
     
-    function sidebarCtrl(sidebarValues,fabricService){
+    function sidebarCtrl(sidebarValues,fabricService,menuModes){
         var vm=this;
         
         vm.sidebarValues=sidebarValues;
+        vm.menuModes= menuModes;
         
         vm.createEle= function(json){
             switch(json.name){
@@ -26,8 +27,6 @@
                 case 'dummyTxt':
                     fabricService.createDummyTxt();
                     break;
-                case 'spinner':
-                    break;
                 case 'progressbar':
                     break;
                 case 'imgplaceholder':
@@ -40,7 +39,7 @@
         
     };
     
-    angular.module('freehand').controller('sidebarCtrl',['sidebarValues','fabricService',sidebarCtrl]);
+    angular.module('freehand').controller('sidebarCtrl',['sidebarValues','fabricService','menuModes',sidebarCtrl]);
     
     
 })();

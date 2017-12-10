@@ -16,7 +16,7 @@ Main HTML file for app
             <div class="row fh-divider-horizontal fh-menu">
                 <div class="col-md-5 fh-actionbar">
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-plus" title="New Project"></button>
-<!--                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-folder-open" title="Open Project"></button>-->
+                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-folder-open" title="Open Project"></button>
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-floppy-o" title="Save as PNG"></button>
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-play" title="Preview"></button>
                 </div>
@@ -28,9 +28,9 @@ Main HTML file for app
             </div>
             <div class="row">
                 <div class="col-md-2 fh-divider-vertical fh-sidebar" ng-controller="sidebarCtrl as sc">
-                    <div class="list-group">
-                        <button ng-repeat="item in sc.sidebarValues" 
-                                ng-click="sc.createEle(item)" type="button" class="list-group-item fh-listBtn">{{item.value}}</button>
+                    <div  ng-include="'app/sidebar/sidebar.html'"></div>
+                    <div class="btn-group">
+                        <button ng-repeat="modes in sc.menuModes" ng-class="{'active':(modes.active === 0)}" type="button" class="btn btn-default">{{modes.name}}</button>
                     </div>
                 </div>
                 <div class="col-md-10">
@@ -66,6 +66,7 @@ Main HTML file for app
         <!--        Service Files-->
         
         <script src="app/common/fabricService.js" type="text/javascript"></script>
+        <script src="app/common/menuService.js" type="text/javascript"></script>
 
     </body>
 </html>

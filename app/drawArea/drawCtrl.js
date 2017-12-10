@@ -16,10 +16,6 @@
             fabricService.intializeCanvas();
         };
         
-        vm.setDelete= function(evt){
-          console.log(evt)  ;
-        };
-        
     };
     
     angular.module('freehand').controller('drawCtrl',['fabricService',drawArea]);
