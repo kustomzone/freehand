@@ -27,10 +27,23 @@
     //0 = true , 1= false
     var menuModes =
             [
-                {id: 0, default: 0, name: "Tools",active:0},
-                {id: 1, default: 1, name: "Properties",active:1},
+                {id: 0, default: 0, name: "Tools", active: 0},
+                {id: 1, default: 1, name: "Properties", active: 1},
             ];
 
     angular.module('freehand').value('menuModes', menuModes);
+
+
+
+    var fileMenuJson =
+            [
+                {id: 0, name:"New Project",value:"new_proj",class:"fh-plus"},
+                {id: 1, name:"Open Project",value:"open_proj",class:"fh-folder-open"},
+                {id: 2, name:"Save Project",value:"save_proj",class:"fh-floppy-o"},
+                {id: 3, name:"Preview",value:"preview",class:"fh-play"},
+            ];
+            
+     angular.module('freehand').value('fileMenuJson', fileMenuJson);
+
 })();
 

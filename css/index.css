@@ -7,27 +7,12 @@ body > *{
     outline: none;
 }
 
-.fh-actionbar{
-    padding: 5px 0px;
-    margin-left: 15px;
-}
-
-.fh-btn{
-    margin-right: 2px;
-    background: #fff;
-    box-shadow: 1px 1px 1px #ccc;
-}
-
 .fh-divider-horizontal{
     border-bottom: 1px solid #ececec;
 }
 
 .fh-divider-vertical{
     border-right: 1px solid #ececec;
-}
-
-.fh-menu{
-    padding: 5px 0px 5px 0px;
 }
 
 .fh-sidebar{
@@ -63,8 +48,4 @@ body > *{
 
 .fh-listBtn{
     outline: none;
-}
-
-.fh-toolbar{
-    float: right;
 }

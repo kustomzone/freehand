@@ -4,23 +4,23 @@ Main HTML file for app
 -->
 <html ng-app="freehand">
     <head>
-        <title>Free Hand - APP</title>
+        <title>Typo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <link href="app/toolbar/file.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row fh-divider-horizontal fh-menu">
+            <div class="row fh-divider-horizontal fh-menu" ng-controller="toolbarCtrl as tc">
                 <div class="col-md-5 fh-actionbar">
-                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-plus" title="New Project"></button>
-                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-folder-open" title="Open Project"></button>
-                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-floppy-o" title="Save as PNG"></button>
-                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-play" title="Preview"></button>
+                    <button ng-repeat="menu in tc.fileMenu" class="fh-btn" title="{{menu.name}}">
+                        <span class="fh-file-image" ng-class="menu.class"></span>
+                    </button>
                 </div>
-                <div class="col-md-2 col-md-offset-4 fh-toolbar" ng-controller="toolbarCtrl as tc">
+                <div class="col-md-2 col-md-offset-4 fh-toolbar">
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-copy" title="Copy Active DOM"></button>
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-paste" title="Paste Active DOM"></button>
                     <button class="btn btn-sm btn-toolbar fh-btn fa fa-trash" ng-click="tc.deleteObj()" title="Delete Active DOM"></button>

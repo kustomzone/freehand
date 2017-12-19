@@ -1,0 +1,61 @@
+/* 
+    Created on : 19-Dec-2017, 20:19:54
+    Author     : Pradhaban
+*/
+
+.fh-actionbar{
+    padding: 5px 0px;
+    margin-left: 15px;
+}
+
+.fh-menu{
+    padding: 5px 0px 5px 0px;
+    margin-bottom: 5px;
+    background: #ebebeb;
+}
+
+.fh-btn{
+  margin-right: 8px;
+    background: #fff;
+    padding: 5px;
+    min-width: 40px;
+    box-shadow: 1px 1px 1px #ccc;
+    height: 28px;
+    border: none;
+}
+
+
+.fh-toolbar{
+    float: right;
+}
+
+
+.fh-plus{
+    background: url(../../img/file/add.png);
+    background-size: cover;
+    background-color: #fff;
+}
+
+.fh-folder-open{
+    background: url(../../img/file/open-folder.png);
+    background-size: cover;
+    background-color: #fff;
+}
+
+.fh-floppy-o{
+    background: url(../../img/file/floppy-disk.png);
+    background-size: cover;
+    background-color: #fff;
+}
+
+.fh-play{
+    background: url(../../img/file/play-button.png);
+    background-size: cover;
+    background-color: #fff;
+}
+
+.fh-file-image {
+    min-width: 19px;
+    height: 19px;
+    display: inline-block;
+}
