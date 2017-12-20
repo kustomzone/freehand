@@ -10,11 +10,12 @@
         
         var canvas=null;
         var objLen={btn:0};
+        var isEdited=false;
         
         function intializeCanvas() {
             setTimeout(function () {
                 var drawArea = document.querySelector(".fh-drawArea");
-                var width = drawArea.clientWidth;
+                var width = parseInt(drawArea.clientWidth);
                 var height = drawArea.clientHeight - 80;
 
                 canvas = new fabric.Canvas('fhCanvas', {width: width, height: height});
@@ -130,6 +131,7 @@
             createIMH:createIMH,
             createDummyTxt:createDummyTxt,
             createContentTxt:createContentTxt,
+            isEdited:isEdited,
             deleteObj:deleteObj
         };
         

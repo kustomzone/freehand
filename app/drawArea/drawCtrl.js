@@ -10,9 +10,9 @@
     function drawArea(fabricService){
         
         var vm=this;
+        vm.fabricService=fabricService;
         
         vm.intialize = function(){
-            console.log("Canvas Intialized");
             fabricService.intializeCanvas();
         };
         

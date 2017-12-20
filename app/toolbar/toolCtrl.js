@@ -7,16 +7,30 @@
     
     'use strict';
     
-    function toolbarCtrl(fabricService,fileMenuJson){
+    function toolbarCtrl(fabricService,fileMenuJson,editMenuJson){
         var vm=this;
         
         vm.fileMenu=fileMenuJson;
+        vm.editMenu=editMenuJson;
         
-        vm.deleteObj =function(){
+        var deleteObj =function(){
             fabricService.deleteObj();
-        }
+        };
+        
+        vm.editAction =function(menuJson){
+            var menu=menuJson.value;
+            switch (menu) {
+                case "delete_obj":
+                    deleteObj();
+                    break;
+                    
+                default:
+                    
+                    break;
+            }
+        };
     };
     
-    angular.module("freehand").controller("toolbarCtrl",['fabricService','fileMenuJson',toolbarCtrl]);
+    angular.module("freehand").controller("toolbarCtrl",['fabricService','fileMenuJson','editMenuJson',toolbarCtrl]);
     
 })();

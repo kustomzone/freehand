@@ -27,6 +27,19 @@
 
 .fh-toolbar{
     float: right;
+    padding: 5px 0px;
+}
+
+.fh-file-copy{
+    background: url(../../img/file/copy.png);
+    background-size: cover;
+    background-color: #fff;
+}
+
+.fh-file-delete{
+    background: url(../../img/file/garbage.png);
+    background-size: cover;
+    background-color: #fff;
 }
 
 

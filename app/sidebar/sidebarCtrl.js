@@ -14,6 +14,7 @@
         vm.menuModes= menuModes;
         
         vm.createEle= function(json){
+            fabricService.isEdited=true;
             switch(json.name){
                 case 'popup':
                      fabricService.createPopup();

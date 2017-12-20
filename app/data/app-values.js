@@ -37,13 +37,22 @@
 
     var fileMenuJson =
             [
-                {id: 0, name:"New Project",value:"new_proj",class:"fh-plus"},
-                {id: 1, name:"Open Project",value:"open_proj",class:"fh-folder-open"},
-                {id: 2, name:"Save Project",value:"save_proj",class:"fh-floppy-o"},
-                {id: 3, name:"Preview",value:"preview",class:"fh-play"},
+                {id: 0, name: "New Project", value: "new_proj", class: "fh-plus"},
+                {id: 1, name: "Open Project", value: "open_proj", class: "fh-folder-open"},
+                {id: 2, name: "Save Project", value: "save_proj", class: "fh-floppy-o"},
+                {id: 3, name: "Preview", value: "preview", class: "fh-play"},
+            ];
+
+    angular.module('freehand').value('fileMenuJson', fileMenuJson);
+
+
+    var editMenuJson =
+            [
+                {id: 0, name: "Clone Object", value: "copy_obj", class: "fh-file-copy"},
+                {id: 0, name: "Delete Object", value: "delete_obj", class: "fh-file-delete"}
             ];
             
-     angular.module('freehand').value('fileMenuJson', fileMenuJson);
+     angular.module('freehand').value('editMenuJson', editMenuJson);
 
 })();
 

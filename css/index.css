@@ -8,7 +8,7 @@ body > *{
 }
 
 .fh-divider-horizontal{
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid #c7c7c7;
 }
 
 .fh-divider-vertical{
@@ -20,10 +20,11 @@ body > *{
 }
 
 .fh-drawArea{
-     min-height: 83vh;
+    min-height: 100%;
     border: 1px solid #ccc;
+    border-top: none;
     margin: 0vh auto;
-    width: 150vh;
+    width: 100%;
 }
 
 .fh-canvas{
@@ -33,18 +34,18 @@ body > *{
 
 .fh-outerbar {
     min-height: 25px;
-    background: #ccc;
+    border-bottom: 1px solid #ebebeb;
 }
 
 .fh-canvas-title{
     color: #fff;
     text-align: center;
     font-size: 16px;
-    width: 100%;
+    max-width: 20%;
+    background: #ccc;
     outline: none;
     font-family: verdana;
-    line-height: 26px;
-}
+    line-height: 26px;}
 
 .fh-listBtn{
     outline: none;
