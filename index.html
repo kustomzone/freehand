@@ -24,14 +24,13 @@ Main HTML file for app
                     <button ng-repeat="menu in tc.editMenu" class="fh-btn" title="{{menu.name}}" ng-click="tc.editAction(menu)">
                         <span class="fh-file-image" ng-class="menu.class"></span>
                     </button>
-<!--                    <button class="btn btn-sm btn-toolbar fh-btn fa fa-trash" ng-click="tc.deleteObj()" title="Delete Active DOM"></button>-->
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-2 fh-divider-vertical fh-sidebar" ng-controller="sidebarCtrl as sc">
                     <div  ng-include="'app/sidebar/sidebar.html'"></div>
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-10" style="padding:0px">
                     <div class="fh-drawArea" ng-controller="drawCtrl as dc" ng-init="dc.intialize()">
                         <div class="fh-outerbar">
                             <div class="fh-canvas-title">
@@ -62,7 +61,6 @@ Main HTML file for app
 
 
         <!--        Service Files-->
-        
         <script src="app/common/fabricService.js" type="text/javascript"></script>
         <script src="app/common/menuService.js" type="text/javascript"></script>
 

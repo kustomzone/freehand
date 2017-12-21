@@ -17,6 +17,7 @@ body > *{
 
 .fh-sidebar{
     height: 90vh;
+    padding: 0px;
 }
 
 .fh-drawArea{

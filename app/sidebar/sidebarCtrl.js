@@ -3,21 +3,21 @@
  */
 
 
-(function(){
-    
+(function () {
+
     'use strict';
-    
-    function sidebarCtrl(sidebarValues,fabricService,menuModes){
-        var vm=this;
-        
-        vm.sidebarValues=sidebarValues;
-        vm.menuModes= menuModes;
-        
-        vm.createEle= function(json){
-            fabricService.isEdited=true;
-            switch(json.name){
+
+    function sidebarCtrl(sidebarValues, fabricService, menuModes) {
+        var vm = this;
+
+        vm.sidebarValues = sidebarValues;
+        vm.menuModes = menuModes;
+
+        vm.createEle = function (json) {
+            fabricService.isEdited = true;
+            switch (json.name) {
                 case 'popup':
-                     fabricService.createPopup();
+                    fabricService.createPopup();
                     break;
                 case 'button':
                     fabricService.createBtn();
@@ -33,15 +33,19 @@
                 case 'imgplaceholder':
                     fabricService.createIMH();
                     break;
+                case 'avatar':
+                    fabricService.createAvatar();
+                    break;
                 default:
-                        
+
             }
         };
-        
-    };
-    
-    angular.module('freehand').controller('sidebarCtrl',['sidebarValues','fabricService','menuModes',sidebarCtrl]);
-    
-    
+
+    }
+    ;
+
+    angular.module('freehand').controller('sidebarCtrl', ['sidebarValues', 'fabricService', 'menuModes', sidebarCtrl]);
+
+
 })();
 

@@ -49,6 +49,16 @@
             setCustomDecor();
         };
         
+        function createAvatar() {
+            fabric.Image.fromURL('img/draw/avatar.svg', function (oImg) {
+                oImg.setLeft(0);
+                oImg.setTop(0);
+                canvas.add(oImg);
+                canvas.renderAll();
+                setCustomDecor();
+            });
+        };
+        
         function createContentTxt(){
             var rect = createRect({left: 200,top: 250,strokeWidth:0,fill: '#ccc',width: 200,height: 10});
             var rect1 = createRect({left: 200,top: 265,strokeWidth:0,fill: '#ccc',width: 200,height: 10});
@@ -131,6 +141,7 @@
             createIMH:createIMH,
             createDummyTxt:createDummyTxt,
             createContentTxt:createContentTxt,
+            createAvatar:createAvatar,
             isEdited:isEdited,
             deleteObj:deleteObj
         };
