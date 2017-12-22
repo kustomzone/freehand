@@ -1,6 +1,9 @@
 <!--<div class="btn-group" style="margin-bottom: 5px">
     <button ng-repeat="modes in sc.menuModes" ng-class="{'active':(modes.active === 0)}" type="button" class="btn btn-default">{{modes.name}}</button>
 </div>-->
+<div class="fh-tab-pane">
+    <div ng-repeat="mode in sc.menuModes" class="fh-tab">{{mode.name}}</div>
+</div>
 <div class="list-group">
     <button ng-repeat="item in sc.sidebarValues" 
             ng-click="sc.createEle(item)" type="button" class="list-group-item fh-listBtn">{{item.value}}</button>

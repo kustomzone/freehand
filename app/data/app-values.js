@@ -34,7 +34,6 @@
     angular.module('freehand').value('menuModes', menuModes);
 
 
-
     var fileMenuJson =
             [
                 {id: 0, name: "New Project", value: "new_proj", class: "fh-plus"},
@@ -44,7 +43,6 @@
             ];
 
     angular.module('freehand').value('fileMenuJson', fileMenuJson);
-
 
     var editMenuJson =
             [

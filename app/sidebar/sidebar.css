@@ -1,0 +1,15 @@
+/* 
+    Created on : 22-Dec-2017, 23:41:47
+    Author     : Pradhaban
+*/
+
+.fh-tab-pane > div {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 2px;
+    min-width: 70px;
+}
+
+.fh-tab {
+    border: 2px solid #ebebeb;
+}
