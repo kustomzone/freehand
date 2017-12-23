@@ -19,6 +19,7 @@ Main HTML file for app
                 <div class="col-md-5 fh-actionbar">
                     <button ng-repeat="menu in tc.fileMenu" class="fh-btn" title="{{menu.name}}">
                         <span class="fh-file-image" ng-class="menu.class"></span>
+                        <span class="fh-file-name">{{menu.name}}</span>
                     </button>
                 </div>
                 <div class="col-md-1 col-md-offset-5 fh-toolbar">

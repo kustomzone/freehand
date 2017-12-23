@@ -6,10 +6,20 @@
 .fh-tab-pane > div {
     display: inline-block;
     padding: 5px;
-    margin-right: 2px;
     min-width: 70px;
 }
 
 .fh-tab {
-    border: 2px solid #ebebeb;
+    cursor: pointer;
+    text-align: center;
+}
+
+.fh-tab .active{
+    border: 1px solid #d6d6d6;
+}
+
+.fh-tab-content {
+    min-height: 150px;
+    border: 1px solid #d6d6d6;
+    border-top: none;
 }

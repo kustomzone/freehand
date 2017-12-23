@@ -9,17 +9,16 @@
 }
 
 .fh-menu{
-    background: #ebebeb;
+    background: #86d5d8;
 }
 
 .fh-btn{
-  margin-right: 8px;
-    background: #fff;
+    margin-right: 8px;
     padding: 5px;
     min-width: 40px;
-    box-shadow: 1px 1px 1px #ccc;
-    height: 28px;
+    height: 40px;
     border: none;
+    background: transparent;
 }
 
 
@@ -31,42 +30,43 @@
 .fh-file-copy{
     background: url(../../img/file/copy.png);
     background-size: cover;
-    background-color: #fff;
 }
 
 .fh-file-delete{
     background: url(../../img/file/garbage.png);
     background-size: cover;
-    background-color: #fff;
 }
 
 
 .fh-plus{
     background: url(../../img/file/add.png);
     background-size: cover;
-    background-color: #fff;
 }
 
 .fh-folder-open{
     background: url(../../img/file/open-folder.png);
     background-size: cover;
-    background-color: #fff;
 }
 
 .fh-floppy-o{
     background: url(../../img/file/floppy-disk.png);
     background-size: cover;
-    background-color: #fff;
 }
 
 .fh-play{
     background: url(../../img/file/play-button.png);
     background-size: cover;
-    background-color: #fff;
 }
 
 .fh-file-image {
     min-width: 19px;
     height: 19px;
     display: inline-block;
+}
+
+.fh-file-name {
+    clear: both;
+    display: block;
+    font-size: 10px;
+    font-family: verdana;
 }

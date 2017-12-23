@@ -36,9 +36,9 @@
 
     var fileMenuJson =
             [
-                {id: 0, name: "New Project", value: "new_proj", class: "fh-plus"},
-                {id: 1, name: "Open Project", value: "open_proj", class: "fh-folder-open"},
-                {id: 2, name: "Save Project", value: "save_proj", class: "fh-floppy-o"},
+                {id: 0, name: "New", value: "new_proj", class: "fh-plus"},
+                {id: 1, name: "Open", value: "open_proj", class: "fh-folder-open"},
+                {id: 2, name: "Save", value: "save_proj", class: "fh-floppy-o"},
                 {id: 3, name: "Preview", value: "preview", class: "fh-play"},
             ];
 

@@ -3,6 +3,13 @@
     Author     : Pradhaban
 */
 
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Regular'), local('Barlow-Regular'), url('../fonts/barlow.woff2') format('woff2');
+}
+
 body > *{
     outline: none;
 }
