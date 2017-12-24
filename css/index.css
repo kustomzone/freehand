@@ -4,10 +4,10 @@
 */
 
 @font-face {
-  font-family: 'Barlow';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Barlow Regular'), local('Barlow-Regular'), url('../fonts/barlow.woff2') format('woff2');
+    font-family: 'TitilliumWeb-Light';
+    font-style: normal;
+    font-weight: 400;
+    src: local('TitilliumWeb-Light'), local('TitilliumWeb-Light'), url('../fonts/TitilliumWeb-Light.ttf') format('ttf');
 }
 
 body > *{
@@ -15,7 +15,7 @@ body > *{
 }
 
 .fh-divider-horizontal{
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 2px solid cadetblue;
 }
 
 .fh-divider-vertical{
@@ -49,7 +49,7 @@ body > *{
     color: #fff;
     text-align: center;
     font-size: 16px;
-    max-width: 20%;
+    max-width: 15%;
     background: #ccc;
     outline: none;
     font-family: verdana;
@@ -57,4 +57,24 @@ body > *{
 
 .fh-listBtn{
     outline: none;
+    min-width: 50px;
+    margin: 1px;
+    border: none;
+    min-height: 50px;
+    background: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 2px cadetblue; 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(95,158,160,0.5);
+    -webkit-box-shadow: 0 0 2px cadetblue; 
 }

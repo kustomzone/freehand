@@ -8,17 +8,17 @@
 
     var sidebarJson =
             [
-                {"name": "button", "value": "Button"},
-                {"name": "label", "value": "Label"},
-                {"name": "txtBox", "value": "Text Box"},
-                {"name": "chkBox", "value": "Check Box"},
-                {"name": "radioBtn", "value": "Radio Button"},
-                {"name": "cntText", "value": "Content Text"},
-                {"name": "dummyTxt", "value": "Lorem Ipsum"},
-                {"name": "progressbar", "value": "Progress Bar"},
-                {"name": "imgplaceholder", "value": "Image Place Holder"},
-                {"name": "popup", "value": "Pop-up"},
-                {"name": "avatar", "value": "Avatar"}
+                {"name": "button", "value": "Button","class":"btn"},
+                {"name": "label", "value": "Label","class":"lbl"},
+                {"name": "txtBox", "value": "Text Box","class":"txtBox"},
+                {"name": "chkBox", "value": "Check Box","class":"chk"},
+                {"name": "radioBtn", "value": "Radio Button","class":"rdo"},
+                {"name": "cntText", "value": "Content Text","class":"conTxt"},
+                {"name": "dummyTxt", "value": "Lorem Ipsum","class":"txt"},
+                {"name": "progressbar", "value": "Progress Bar","class":"prg"},
+                {"name": "imgplaceholder", "value": "Image Place Holder","class":"img"},
+                {"name": "popup", "value": "Pop-up","class":"pop-up"},
+                {"name": "avatar", "value": "Avatar","class":"avt"}
 
             ];
     angular.module('freehand').value('sidebarValues', sidebarJson);

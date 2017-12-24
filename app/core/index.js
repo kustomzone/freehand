@@ -11,8 +11,9 @@ const {app,BrowserWindow} = electron;
 
 
 app.on('ready', () => {
-    let win = new BrowserWindow({width: 800, height: 600});
+    let win = new BrowserWindow({width: 800, height: 700});
     win.setMenu(null);
+    win.setFullScreen(true);
     win.loadURL(url.format({
         pathname:path.join(__dirname,'/../../index.html'),
         protocol:'file:',

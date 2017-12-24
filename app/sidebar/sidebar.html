@@ -1,10 +1,18 @@
-<!--<div class="btn-group" style="margin-bottom: 5px">
-    <button ng-repeat="modes in sc.menuModes" ng-class="{'active':(modes.active === 0)}" type="button" class="btn btn-default">{{modes.name}}</button>
-</div>-->
-<div class="fh-tab-pane">
-    <div class="fh-tab">Tools</div>
-</div>
-<div class="fh-tab-content">
-    <button ng-repeat="item in sc.sidebarValues" 
-            ng-click="sc.createEle(item)" type="button" class=" fh-listBtn">{{item.value}}</button>
+<div>
+    <div class="fh-tab-pane">
+        <div class="fh-tab">Tools</div>
+    </div>
+    <div class="fh-load-option">
+        <select>
+            <option value="forms">Default</option>
+            <option value="person">Person</option>
+            <option value="shapes">Shapes</option>
+            <option value="map">Maps</option>
+        </select>
+    </div>
+    <div class="fh-tab-content">
+
+        <button ng-repeat="item in sc.sidebarValues" 
+                ng-click="sc.createEle(item)" type="button" class="fh-listBtn" ng-class="item.class"></button>
+    </div>
 </div>
